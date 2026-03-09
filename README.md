@@ -3,7 +3,7 @@ This project explores how different biological and experimental features relate 
 # Dataset
 Kaggle source: 
 
-    - https://www.kaggle.com/datasets/samiraalipour/genomics-of-drug-sensitivity-in-cancer-gdsc/data?select=GDSC_DATASET.csv
+      https://www.kaggle.com/datasets/samiraalipour/genomics-of-drug-sensitivity-in-cancer-gdsc/data?select=GDSC_DATASET.csv
 
 The dataset includes a mix of identifiers, drug‑response metrics, biological annotations, and experimental metadata. Some of the main columns are:
 - COSMIC_ID, CELL_LINE_NAME – cell‑line identifiers
