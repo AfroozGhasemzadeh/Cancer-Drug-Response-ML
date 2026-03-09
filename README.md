@@ -2,25 +2,25 @@
 This project explores how different biological and experimental features relate to cancer drug sensitivity. Using the Genomics of Drug Sensitivity in Cancer (GDSC) dataset from Kaggle, I trained a LightGBM model to predict LN_IC50 values for various drugs across cancer cell lines. The goal was to build a simple, interpretable model and understand which features contribute most to drug response.
 # Dataset
 Kaggle source: 
-https://www.kaggle.com/datasets/samiraalipour/genomics-of-drug-sensitivity-in-cancer-gdsc/data?select=GDSC_DATASET.csv
+  - https://www.kaggle.com/datasets/samiraalipour/genomics-of-drug-sensitivity-in-cancer-gdsc/data?select=GDSC_DATASET.csv
 The dataset includes a mix of identifiers, drug‑response metrics, biological annotations, and experimental metadata. Some of the main columns are:
-  - 	COSMIC_ID, CELL_LINE_NAME – cell‑line identifiers
-  - 	TCGA_DESC, Cancer Type – tissue and cancer‑type labels
-  - 	DRUG_ID, DRUG_NAME – drug information
-  - 	LN_IC50, AUC, Z_SCORE – drug‑response measurements
-  - 	Growth Properties – adherent vs. suspension
-  - 	Screen Medium – assay conditions
-  - 	TARGET, TARGET_PATHWAY – drug target annotations
-  - 	CNA, Gene Expression, Methylation – high‑level genomic feature categories
+- COSMIC_ID, CELL_LINE_NAME – cell‑line identifiers
+- TCGA_DESC, Cancer Type – tissue and cancer‑type labels
+- DRUG_ID, DRUG_NAME – drug information
+- LN_IC50, AUC, Z_SCORE – drug‑response measurements
+- Growth Properties – adherent vs. suspension
+- Screen Medium – assay conditions
+- TARGET, TARGET_PATHWAY – drug target annotations
+- CNA, Gene Expression, Methylation – high‑level genomic feature categories
 The model uses LN_IC50 as the prediction target.
 # What I Did
-  - 	Loaded and cleaned the dataset
-  - 	One‑hot encoded categorical features
-  - 	Split the data into train/test sets
-  - 	Trained a LightGBM regression model
-  - 	Tuned hyperparameters with RandomizedSearchCV
-  - 	Evaluated performance (R², RMSE)
-  - 	Analyzed feature importance and biological patterns
+- Loaded and cleaned the dataset
+- One‑hot encoded categorical features
+- Split the data into train/test sets
+- Trained a LightGBM regression model
+- Tuned hyperparameters with RandomizedSearchCV
+- Evaluated performance (R², RMSE)
+- Analyzed feature importance and biological patterns
 All steps are implemented in a single notebook.
 # Model Performance
 The final LightGBM model achieved:
