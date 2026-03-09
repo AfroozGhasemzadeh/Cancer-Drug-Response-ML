@@ -2,7 +2,8 @@
 This project explores how different biological and experimental features relate to cancer drug sensitivity. Using the Genomics of Drug Sensitivity in Cancer (GDSC) dataset from Kaggle, I trained a LightGBM model to predict LN_IC50 values for various drugs across cancer cell lines. The goal was to build a simple, interpretable model and understand which features contribute most to drug response.
 # Dataset
 Kaggle source: 
-  -   https://www.kaggle.com/datasets/samiraalipour/genomics-of-drug-sensitivity-in-cancer-gdsc/data?select=GDSC_DATASET.csv
+
+  - https://www.kaggle.com/datasets/samiraalipour/genomics-of-drug-sensitivity-in-cancer-gdsc/data?select=GDSC_DATASET.csv
 
 The dataset includes a mix of identifiers, drug‑response metrics, biological annotations, and experimental metadata. Some of the main columns are:
 - COSMIC_ID, CELL_LINE_NAME – cell‑line identifiers
